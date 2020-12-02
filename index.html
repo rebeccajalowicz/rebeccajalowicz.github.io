@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+  
+</style>
+</head>
+
+<nav>
+  <a href="index.html"><img src="portfoliologo.png" alt="" width="40"></a>
+  <div class = "dropdown">
+    <a href="index.html" class = "dropbtn" >WORK</a>
+    <div class = "dropdown-content">
+      <a href="hallmills.html">Hall Mills Murder Mystery</a>
+      <a href="revival.html">Revival</a>
+      <a href="cgecritique.html">CGE Website Critique</a>
+    </div>
+  </div>
+  <a href="about.html">ABOUT</a>
+  <a href="resume.pdf" target="_blank">RESUME</a>
+</nav>
+
+<header>
+
+
+  <br>
+  <img src = "proffinaimgl.png" alt="" class = "profile">
+  <div class = "intro">
+    <h1>👋🏼 Hello! My name is Rebecca.</h1>
+    <p>Aspiring UX designer currently studying Interactive Multimedia at
+      The College of New Jersey with minors in Computer Science and Graphic Design.</p>
+      <p>Passionate about the intersection of technology with mental health and accessibility.</p>
+      <p>Creative, Collaborative and Kind 💛</p>
+  </div>
+  </div>
+</header>
+
+<body>
+  <div class = "casestudy">
+    <a href = "hallmills.html"><img src = "hallmillstrans-01.png" alt="" class = "casestudyicon" id= "hm"></a>
+    <a href = "hallmills.html">
+      <div class = "caseinfo">
+        <h2 id = "hm">Hall-Mills Murder Mystery - Case Study</h2>
+        <p>An interactive learning experience about the history of New Jersey and one of the longest unsolved crimes in the United States.</p>
+        <p>🖥️ | UX | Wordpress</p>
+      </div>
+    </a>
+  </div>
+  <div class="casestudy">
+    <a href = "revival.html"><img src = "revivaltrans-01.png" alt="" class = "casestudyicon" id= "rv"></a>
+    <a href = "revival.html">
+    <div class = "caseinfo">
+      <h2 id= "rv">Revival - A Hackathon Case Study</h2>
+      <p>An open world video game where the user must make a mask in order to get outside their hourse and save the world from pollution.</p>
+      <p>🕹️ | UI/UX</p>
+    </div>
+    </a>
+  </div>
+  <div class="casestudy">
+    <a href = "cgecritique.html"><img src = "cgetrans-01.png" alt="" class = "casestudyicon" id= "cge"></a>
+    <a href = "cgecritique.html">
+    <div class = "caseinfo">
+      <h2 id= "cge">TCNJ Center for Global Engagement Website Critique</h2>
+      <p>A report focusing on improving the consistency throughout the CGE website for The College of New Jersey.</p>
+      <p>🖥️ | UI | Critique</p>
+    </div>
+    </a>
+  </div>
+  <!-- <div class="casestudy">
+    <a href = "cookbook.html"><img src = "cookbookicon-01.png" alt="" class = "casestudyicon"></a>
+    <a href = "cookbook.html">
+    <div class = "caseinfo">
+      <h2>The Interactive Designer's Cookbook</h2>
+      <p>An in depth look at significant figures in psychology represented as chefs whose theories are likened to ingredients to add to one’s designs and interactive media.</p>
+      <p>🗒️ | Psychology | Design | Research</p>
+    </div>
+    </a>
+  </div> -->
+  <div class = "space"></div>
+  <div class = "grayback">
+  <div class = "casestudy">
+  <h2>Graphic Design and Web Assistant</h2>
+  <p>I work part time for the Center for Global Engagement at The College of New Jersey. I update their site using wordpress
+  along with making graphics for their site and social media. Below are some of the posts I have made for them using Adobe Illustrator.</p>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src = "cgeimgs/borenscholarship-01.png" alt="" style= "width: 100%;"></div>
+      <div class="swiper-slide"><img src = "cgeimgs/robling.png" alt="" style= "width: 100%;"></div>
+      <div class="swiper-slide"><img src = "cgeimgs/milaninfoflyer.png" alt="" style= "width: 100%;"></div>
+      <div class="swiper-slide"><img src = "cgeimgs/thanksgiving-01.png" alt="" style= "width: 100%;"></div>
+      <div class="swiper-slide"><img src = "cgeimgs/happyholidays-01.png" alt="" style= "width: 100%;"></div>
+    </div>
+    <br>
+    <br>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  });
+  </script>
+  </div>
+</div>
+</body>
+
+<footer>
+  <p>Designed and Coded with 💛 by Me &nbsp | &nbsp
+      <a href="https://www.linkedin.com/in/rjalowicz/" target="_blank"><strong>in</strong></a> &nbsp
+      <a href="mailto:rebeccajalowicz@gmail.com">✉️</a> &nbsp
+      📞: (973) 934 - 9934
+    </p>
+</html>
