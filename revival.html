@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <style>
     .profile{
       float: right;
@@ -51,12 +53,44 @@
     h3 {
       padding-bottom: 20px;
     }
+    h4 {
+      padding-left: 0px;
+      margin-left: 0px;
+    }
     h5{
       display: inline;
       font-size: 17px;
       font-weight: 500px;
       padding: 0px;
       margin: 0px;
+    }
+    h6{
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-size: 17px;
+      font-weight: 200;
+    }
+    .grayback {
+      text-align: center;
+    }
+    .smallgray {
+      background-color: #f6f6f6;
+      border-radius: 3px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .centerimg {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
   </style>
 </head>
@@ -151,24 +185,237 @@
     </div>
     <div class = "grayback">
       <div class = "casestudy">
-        Who your user is
+          <h4>Research</h4>
+          <br>
+          <br>
+        <div class = "left"
+        <p>Our group was both inspired by how the pandemic affects people's mental
+           health but also how games relate to that as a type of coping mechanism.
+           These ideas came from a group discussion from our own personal
+           experiences and were validated through research on the topics. Here
+           are two of the articles we found that validated our ideas and led us
+           to create Revival.
+         </p>
+         <ul>
+           <li><a href = "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">“Coping With Stress” by the CDC</a></li>
+           <li><a hreaf = "https://www.healthline.com/health/mental-health/animal-crossing-mental-health-lessons">“5 Lessons on Mental Health from ‘Animal Crossing’ That we all need” by Healthline</a></li>
+         </ul>
+       </div>
       </div>
     </div>
     <div class = "casestudy">
-      Design process
+      <div class = "center">
+      <h4>Design Process:</h4>
+      </div>
+      <br>
+      <br>
+      <img src = "revival/concept.png" alt = "" class = "half" width = 90%>
+      <div class = "half">
+      <div class = "left">
+        <br>
+        <br>
+        <h5>First Iteration: </h5>
+        <p>I started the design process by making a quick graphic in illustrator
+          of what the world would look like ideally. It was a simple map just to
+          give the team an idea of what we wanted and how to proceed with developing
+          the game. From here we decided that with the time constraints, it was best
+          to focus on the house  and a small portion of the outside world.</p>
+      </div>
+      </div>
     </div>
     <div class = "casestudy">
-      The solution and why you arrived at the solution
+      <div class = "center">
+        <h5>Paper Prototyping</h5>
+      </div>
+      <br>
+      <p>After this I began making paper prototypes for how the game would look.
+        Initially we were planning having the house be a square and the outside be
+        square as well. In order to make the game in unity, there would have to be
+        separate images for the background and furniture in order to make the
+        furniture colliders so the main character could not walk over an object
+        like a bed or a table.</p>
+        <img src = "revival/rapidsketch_inside.jpeg" alt = "" class = "half" width = "100%">
+        <img src = "revival/rapidsketch_outside.jpeg" alt = "" class = "half" width = "100%">
     </div>
     <div class = "casestudy">
-      UI designs
-      <div class = "smallspace"></div>
+      <img src = "revival/timmy.png" alt = "" width = "35%" class = "centerimg">
+      <div class = "casestudy">
+        <p>While my role was to make the background whereas another team member
+          made the furniture, add smaller details and design the main character,
+          lovingly named Timmy.</p>
+      </div>
     </div>
+    <div class = "casestudy">
+      <div class = "half">
+      <div class = "left">
+        <br>
+        <br>
+        <h5>Initial Background: </h5>
+        <p>In order to make the game in unity, there would have to be separate images for the background
+          and furniture in order to make the furniture colliders so the main
+          character could not walk over an object like a bed or a table. I made
+          the background whereas another team member made the furniture and
+          the main character.</p>
+          <div class = "smallgray">
+          <p><h5>New Problem: </h5>Unity had a set ratio for the size of the background
+            and what the user could see at a given time. The ratio was a recatngle as opposed to a square.
+            If the current background were to be used, it would bee too zoomed in and the user would not be
+            able to see enough of the background to know where to go.</p>
+          <p><h5>Solution: </h5>Reformat the background</p>
+          </div>
+      </div>
+      </div>
+      <img src = "revival/houseBackground.png" alt = "" width = "90%" class = "half">
+    </div>
+
+    <div class = "casestudy">
+      <div class = "center">
+        <h5>Second Iteration: </h5>
+      </div>
+      <div class = "left">
+        <p>Here is what the redesigns looked like, again due to time constraints
+          it was best for me to just reformat what I had already created as opposed
+          to sketch something entirely new.</p>
+          <img src = "revival/houseback.png" alt = "" width = "100%">
+          <div class = "smallspace"></div>
+          <p>Once the player gets outside of their house the world is polluted and the
+             player has to clean up the world. For this I needed to make 2 backgrounds,
+             a polluted world and a clean world</p>
+             <div class="swiper-container">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide"><img src = "revival/pollutedOutside.png" alt="" style= "width: 100%;"></div>
+                 <div class="swiper-slide"><img src = "revival/cleanOutside.png" alt="" style= "width: 100%;"></div>
+               </div>
+               <br>
+               <br>
+               <!-- Add Pagination -->
+               <div class="swiper-pagination"></div>
+             </div>
+      </div>
+    </div>
+    <div class = "casestudy">
+      <div class = "center">
+        <h4>Solution:</h4>
+      </div>
+      <br>
+      <h6>***With time constraints we were not able to make a fully functional game,
+        however we were able to create a working prototype within unity along with a
+        few high fidelity mockups showing how the finished product would ook and
+        function.</h6>
+      <br>
+      <p><h5>The pitch:</h5> After waking up from a horrifying nightmare that is
+        their harsh reality, the player must escape their house in order to cleanse
+        the world from pollution. Before doing so, they must build a mask to protect
+        themselves from the polluted air and to freely traverse the open world,
+        starting off with their own neighborhood. From picking up garbage to taking
+         out forest fires, the player must do whatever it is possible to reduce
+         pollution so they can save their beloved planet from the harmful and
+         poisonous takeover.</p>
+      <br>
+      <img src = "revival/finalhouse.png" alt = "" width = "100%">
+      <div class = "center">
+        <p>First Location = Inside the Player’s House</p>
+      </div>
+    </div>
+    <div class = "casestudy">
+      <div class = "half">
+        <p>Player must complete tasks in order to acquire parts to firstly build
+          a mask to safely protect themselves from pollution once they exit their
+          house</p>
+      </div>
+      <div class = "half">
+        <p>After completing a task, a mask part will be given to the player</p>
+        <br>
+      </div>
+      <img src = "revival/locatingexample.png" alt = "" width = "100%" class = "half">
+      <img src = "revival/taskexample.png" alt = "" width = "100%" class = "half">
+    </div>
+    <div class = "casestudy">
+      <br>
+      <p>After the player has successfully escaped their house, they must complete
+        more tasks associated with their neighborhood to reduce pollution and work
+        their way to other locations to clean the rest of the world.</p>
+        <br>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src = "revival/finalpollutedOutside.png" alt="" style= "width: 100%;"></div>
+            <div class="swiper-slide"><img src = "revival/finalcleanOutside.png" alt="" style= "width: 100%;"></div>
+          </div>
+          <br>
+          <br>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class = "center">
+          <p>Second Location = Inside the Player’s House</p>
+        </div>
+    </div>
+    <div class = "casestudy">
+      <video width="80%" autoplay muted loop>
+        <source src="revival/revivalvideo.mp4" type="video/mp4">
+      </video>
+      <div class = "center">
+        <p>How Timmy moves and interacts with his environment (program running in unity)</p>
+      </div>
+    </div>
+    <div class = "smallspace"></div>
     <div class = "grayback">
       <div class = "casestudy">
-        next steps and takeaways
+        <div class = "left">
+          <h4>Future Considerations</h4>
+          <p>This was a 24 hour event and while I am very proud of the outcome and
+            all of the hard work my team and I put into this there are still some
+            things I would love to see if the project ever gets continued. </p>
+          <p>What to continue in terms of game development:</p>
+          <ul>
+            <li>Fully fleshed out world</li>
+            <li>Make games for all of the tasks needed to move on within the world itself</li>
+            <li>Make the game multiplayer, be able to save the world with your friends!</li>
+          </ul>
+          <br>
+          <p>Along with this the UX designer of the team, while we were able to
+            map user journeys and the entire project was based around a user’s mental
+            health in the time of a pandemic, I wish i was able to validate some of the
+            ideas we came up with. There was just simply not enough time to reach out
+            to people in order to test our ideas and game and we were not able to go
+            out into the field to test either as we are still very restricted during
+            the pandemic. However if we had the time and we were able to do user
+            testing here is what I would have liked to do:</p>
+            <ul>
+              <li><h5>Pre-Development: </h5>Survey people what games they like the
+                most right now, if it helps them cope, what they need to feel comforted/wind
+                down these days, is climate change/pollution too real of a topic for
+                escapism? Would that make you more depressed?</li>
+              <li><h5>During Development: </h5>Run a cognitive walkthrough, make
+                sure the user knows when a task needs to happen and validate if
+                they are able to complete the task.</li>
+              <li><h5>Post-Development: </h5> Have the users play the game and
+                interview them afterwards. Some examples of questions might be:
+                Is this too triggering/too real? (the purpose is to bring joy
+                not frustration), Is the game fun? Would you play with your friends?
+                Do you feel a sense of escapism when you play? What other changes
+                would you recommend?</li>
+            </ul>
+            <br>
+            <p>Then I would simply ideate and iterate based off of all of the research
+              found at each step in order to make this game the best it could possibly be.</p>
+        </div>
       </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    });
+    </script>
 </body>
 
 <footer>
