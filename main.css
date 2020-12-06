@@ -271,6 +271,13 @@ footer {
 .onethird {
   width: 30%;
   padding: 1%;
+  float: left;
+}
+
+.twothirds {
+  width: 64%;
+  padding: 2%;
+  float: left;
 }
 
 .users {
@@ -355,6 +362,12 @@ footer {
   .onethird {
     width: 100%;
   }
+  .twothirds {
+    width: 100%
+  }
+  .half {
+    width: 100;
+  }
   .users {
     width: 100%;
   }
@@ -398,6 +411,12 @@ footer {
   }
   .onethird {
     width: 100%;
+  }
+  .twothirds {
+    width: 100%
+  }
+  .half {
+    width: 100;
   }
   .users {
     width: 95%;
