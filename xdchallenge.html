@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="portfoliologo.png">
+</head>
+<style>
+  .profile{
+    float: right;
+    padding-right: 0%;
+  }
+  .intro{
+    padding-top: 50px;
+  }
+  .smallspace {
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: 1300px) {
+    .intro{
+      padding-top: 0px;
+    }
+  }
+  .caseinfo {
+    padding-top: 0px;
+    width: 47%;
+    padding-right: 3%;
+    padding-left: 0px;
+  }
+  header {
+    background: #CDF3D5;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    margin-bottom: 0px;
+  }
+  .greenback{
+    background: #CDF3D5;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    margin-bottom: 10px;
+  }
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    padding-bottom: 20px;
+  }
+  h4 {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  h5{
+    display: inline;
+    font-size: 17px;
+    font-weight: 500px;
+    padding: 0px;
+    margin: 0px;
+  }
+  h6{
+    margin: 0px;
+    padding-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .grayback {
+    text-align: center;
+  }
+  .smallgray {
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .centerimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .nobreak {
+    display: inline;
+    text-decoration: underline;
+  }
+</style>
+
+<nav>
+  <a href="index.html"><img src="portfoliologo.png" alt="" width="40"></a>
+  <div class = "dropdown">
+    <a href="index.html" class = "dropbtn" >WORK</a>
+    <div class = "dropdown-content">
+      <a href="tictactoe.html">Accessible Tic Tac Toe</a>
+      <a href="hallmills.html">Hall Mills Murder Mystery</a>
+      <a href="revival.html">Revival</a>
+      <a href="cgecritique.html">CGE Website Critique</a>
+    </div>
+  </div>
+  <a href="extras.html">EXTRAS</a>
+  <a href="about.html">ABOUT</a>
+  <a href="jalowiczresume.pdf.pdf" target="_blank">RESUME</a>
+</nav>
+
+<header>
+  <div class = "center">
+    <br>
+    <h1>Adobe Xd Creative Challenge</h1>
+    <div class = "smallspace"></div>
+    <p>Adobe hosts many 9 day creative challenges where each day is a new project, aimed to teach people Adobe Xd while building UI design skills as well.
+      I did the challenge from December 1st through Decmber 11th. </p>
+  </div>
+</header>
+
+<body>
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "center">
+      <h3>Day 1 - Landing Page</h3>
+    </div>
+    <img src = "extras/day1.png" width = "100%" alt = "">
+    <div class = "left">
+      <p>This piece is a simple landing page for the flower shop Jolly Florals. The goal for the look and feel for this piece is modern and elegant.</p>
+      <p>Skills Learned:
+        <ul>
+          <li>Making a component to be used again - Made the green explore button a component and used it again with the button labeled "Buy"</li>
+          <li>Background Blur - Used in the Footer</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 2 - Interactive Map</h3>
+      </div>
+      <div class = "left">
+        <p>Here I made a dark mode version of a store or restaurant locator app, similar to yelp.</p>
+        <p>Skills Learned:
+          <ul>
+            <li>Scroll Groups - A scroll group was used to make the map itself movable along
+              with being able to scroll through the different restaurants on the bottom of the screen</li>
+            <li>Repeat Grids - Used in bottom of the screen to make multiple restaurants</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class = "half">
+      <video width="60%" autoplay muted loop class = "centerimg">
+        <source src="extras/day2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "half">
+      <video width="70%" autoplay muted loop class = "centerimg">
+        <source src="extras/day3.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 3 - Dropdown Menu</h3>
+      </div>
+      <div class = "left">
+        <p>This piece is notification center for people working in an office. With
+          this notification center, users would be able to see who in their company is working at the moment and what specifically they are working on. </p>
+        <p>Skills Learned:
+          <ul>
+            <li>Hover States - The defult state is an empty screen and hover state is the notification center sliding into the screen. </li>
+            <li>Auto Animate vs. Transition - Transition is used to make the hover effect over the cowoerkers because auto animate took longer to shwo the effect.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 4 - Card Flip</h3>
+      </div>
+      <div class = "left">
+        <p>Here is a simple card flip where if you click on the card you can see someone's social media stats. </p>
+        <p>Skills Learned:
+          <ul>
+            <li>Auto Animate & Snap - Snap was the effect used to make this particular animation</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class = "half">
+      <video width="100%" autoplay muted loop>
+        <source src="extras/day4.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "center">
+      <h3>Day 5 - Augmented Reality</h3>
+    </div>
+    <img src = "extras/day5.png" width = "100%" alt = "">
+    <div class = "left">
+      <p>This piece is a concept for what an augrmented reality experience for a workplace could be.
+        The person using this is someone going to an interview, the AR shows him exaclty where he needs to go along with who else is in the office.</p>
+      <p>Skills Learned:
+        <ul>
+          <li>3d Transforms - Used to make the triangles at the bottom appear to be leading away from the screen along with the worker id's to be angled in front of their desks.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 6 - Presentation Template</h3>
+        <div class = "smallspace"></div>
+      </div>
+      <video width="100%" autoplay muted loop>
+        <source src="extras/day6.mp4" type="video/mp4">
+      </video>
+      <div class = "left">
+        <p>Here is just a template for a possible presentation. Instead of using something like google slides or powerpoint, I would potentially be able to use Xd as well.</p>
+        <p>Skills Learned:
+          <ul>
+            <li>Trigger using keys amd gamepad - Used right arrow key to transition between slides in protyping mode.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 7 - Slide Out Menu</h3>
+      </div>
+      <video width="100%" autoplay muted loop>
+        <source src="extras/day7.mp4" type="video/mp4">
+      </video>
+      <div class = "left">
+        <p>This is just a sample navigation bar for an app on a tablet or desktop. This piece is just showing how the navigation in particular would work.</p>
+        <p>Skills Learned:
+          <ul>
+            <li>This piece is more of a combination of skills previously learned, albeit, combined.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "half">
+      <video width="100%" autoplay muted loop>
+        <source src="extras/day8.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class = "half">
+      <div class = "center">
+        <h3>Day 8 - Browsable Library</h3>
+      </div>
+      <div class = "left">
+        <p>Here is a sample landing page for a music library. I tried to make an app in dark mode again, this time it was more
+          so because I think it worked well with the mood of the page. </p>
+        <p>Skills Learned:
+          <ul>
+            <li>Similarly to the slide out menu this piece is more of a combination of skills previously
+              learned. Although I feel like with this piece I focused more on layout so I developed more of an understanding in that area.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "smallspace"></div>
+
+  <div class = "casestudy">
+    <div class = "onethird">
+      <div class = "center">
+        <h3>Day 9 - Social Profile Card</h3>
+      </div>
+      <div class = "left">
+        <p>Similarly to the card flip this is just a card showing social media stats</p>
+        <p>Skills Learned:
+          <ul>
+            <li>Stack - the whole card itself was group into a stack.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class = "twothirds">
+      <img src = "extras/day9.png" width = "100%" alt = "">
+    </div>
+  </div>
+</body>
+
+
+<footer>
+  <p>Designed and Coded with 💛 by Me &nbsp | &nbsp
+      <a href="https://www.linkedin.com/in/rjalowicz/" target="_blank"><strong>in</strong></a> &nbsp
+      <a href="mailto:rebeccajalowicz@gmail.com">✉️</a> &nbsp
+      📞: (973) 934 - 9934
+    </p>
+</footer>
+
+</html>
