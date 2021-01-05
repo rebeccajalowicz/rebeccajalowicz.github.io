@@ -89,7 +89,7 @@
   </div>
   <a href="extras.html">EXTRAS</a>
   <a href="about.html">ABOUT</a>
-  <a href="jalowiczresume.pdf" target="_blank">RESUME</a>
+  <a href="rjalowiczresume.pdf" target="_blank">RESUME</a>
 </nav>
 
 <header>
@@ -168,7 +168,7 @@
       <div class = "casestudy">
         <h4>Preliminary Research</h4>
         <p class = "left">We decided to research different versions of well known games, specifically
-          tic tac toe. We were able to find a physical version of tic tac toe for people with visual impairments
+          tic tac toe. We were able to find a physical version of tic tac toe for people with visual impairments,
           but nothing comprehensive for an online or digital version.
           <a href = "http://www.braillebookstore.com/Tic--Tac--Toe,-Plastic.1" target="_blank" class = "underline">Here is the link to the physical version we found</a> </p>
           <br>
@@ -184,7 +184,7 @@
         <br>
         <br>
         <p><h5>First Iteration: </h5>We decided we wanted multiple ways to play the game to allow the user to choose which mode works best for them. The three modes we decided were
-        using the mouse, they keyboard and voice activation.</p>
+        using the mouse, they keyboard and voice recognition.</p>
         <br>
         <br>
         <div class = "smallgray">
@@ -193,7 +193,7 @@
           <img src = "tictactoe/storyboarding.png" width = "100%" alt = "">
         </div>
         <div class = "smallspace"></div>
-          <p>Due to time constraints we had to start developping the game as soon as possible so we added and made changes to the game itself
+          <p>Due to time constraints we had to start developing the game as soon as possible. We added and made changes to the game itself
             instead of making mockups for user testing. At this point we had the following features implemented:
           <ul>
             <li>Mouse Controls</li>
@@ -218,10 +218,10 @@
 
     <div class = "casestudy">
       <h5>First Iteration User Testing</h5>
-      <p>I created a survey to get feedback on what we had so far after our first iteration of accessible tic tac toe.
-        The goal for this round of user testing was to get feedback on what he had,
-        catch any errors early on and to get suggestions from users on what to include
-        and do next. In total we had 18 people fill out the survey anonymously. You can see the
+      <p>I created a survey to get feedback on what we had after our first iteration of accessible tic tac toe.
+        The goal for this round of user testing was to get feedback on what we had,
+        catch any errors early on and get suggestions from users on what to include
+        next. In total we had 18 people fill out the survey anonymously. You can see the
         survey and the questions asked <a href ="https://docs.google.com/forms/d/e/1FAIpQLScvjYglOWr_jZosmt-Oof9ERdL6lX0o8MRZCV9-a7ZarACIZA/viewform" target="_blank" class = "underline">here</a>.
       </p>
       <br>
@@ -242,7 +242,7 @@
 
     <div class = "casestudy">
       <p><h5>Second Iteration: </h5>We decided to listen to the feedback from the
-        visually impaired user as the game is designed with those with visual impairments in mind. We also got a lot of feedbacl about frustration with
+        visually impaired user as the game is designed with those with visual impairments in mind. We also got a lot of feedback about frustration with
       voice control and not knowing the keyboard was available to use. Here are the issues given in the feedback and the solutions we made based off of them:
       <br>
       <div class = "half">
@@ -285,11 +285,12 @@
       </div>
       <div class = "half">
         <div class = "left">
-          <p>✅ Include intrustions near the gameboard that explains the features included in the web application</p>
+          <p>✅ Include instructions near the gameboard that explains the features included in the web application</p>
         </div>
       </div>
     </p>
     </div>
+
     <div class = "casestudy">
       <div class = "smallgray">
         <p><h5>Simple Mockups: </h5> Prior to implementing the color scheme changes ong the web application itself,
@@ -299,9 +300,21 @@
           <img src = "tictactoe/colormockup3.png" width = "31%" style = "padding: 1%" alt = "">
       </div>
     </div>
+
+    <div class = "casestudy">
+      <div class = "half">
+        <h5>Information Architecture</h5>
+        <p>Now that we knew all of the features we wanted to include, we created a state diagram of ideally how the user should progress through the game.</p>
+        <p>The state digram was made using lucid charts.</p>
+      </div>
+      <div class = "half">
+        <img src = "tictactoe/state_diagram.png" width = "90%" class = "centerimg" alt = "">
+      </div>
+    </div>
+
     <div class = "casestudy">
       <p>From here we implemented the color changing feautres along with changing the text size. Since other group members were working on
-        recognition and adding a "read the board" feature, I was the one to implement this part of the project. I made all of the different css files
+        voice recognition and adding a "read the board" feature, I was the one to implement this part of the project. I made all of the different css files
         along with a little bit of javascript to switch the files after clicking a button.</p>
       <br>
       <p>Here is what the different color schemes looked like:</p>
@@ -331,21 +344,21 @@
         <img src = "tictactoe/second5.png" alt="" style= "width: 100%;" class = "centerimg">
       </div>
       <div class = "half">
-      <p>We also included a feature to increase the text size, at this point we ran
-        into an issue where the text would go behind the buttons when increased. This wou;d be fixed in the next iteration</p>
+      <p>We also included a feature to increase the text size. At this point we ran
+        into an issue where the text would go behind the buttons when increased. This would be fixed in the next iteration.</p>
         <p>Here is what the site looked like when the text was increased</p>
       </div>
     </div>
     <div class = "casestudy">
-      <p>We also implemented a "read the board feature where a syntehtic voice
-        would read the board from right to left stating where the x's and o's were"
+      <p>We also implemented a "read the board" feature where a syntehtic voice
+        would read the board from right to left, stating where the x's and o's were.
       </p>
       <div class = "smallspace"></div>
       <div class = "smallgray">
         <h5>User Feedback From Professor</h5>
-        <p>Our group had a checkin with our professor on our progress. We had her test out the game and she gave us the following advice:
+        <p>Our group had a check in with our professor on our progress. We had her test out the game and she gave us the following advice:
           <ul>
-            <li>Work one the layout, it is slightly off centered</li>
+            <li>Work on the layout, it is slightly off centered</li>
             <li>The read the board feature is a bit confusing, try to play around with other ways to read the board (ex. only read where the x's are or only read where the o's are)</li>
             <li>The speed at which the syntehtic voice read the board was too fast</li>
           </ul>
@@ -370,7 +383,7 @@
 
       <div class = "half">
         <div class = "left">
-          <p>❌ Read the board feature confusing</p>
+          <p>❌ Read the board feature is confusing</p>
         </div>
       </div>
       <div class = "half">
@@ -408,7 +421,7 @@
       </div>
       <div class = "half">
         <div class = "left">
-          <p>✅ The game board was centered and buttons were grouped based on purpose to surround the board as opposed to a lot of buttons on the bottom of the screen</p>
+          <p>✅ The game board was centered and buttons were grouped based on purpose to surround the board, as opposed to a lot of buttons on the bottom of the screen</p>
         </div>
       </div>
     </div>
@@ -418,7 +431,7 @@
       <p>I created a survey to get feedback on the third iteration of accessible tic tac toe.
         The overall goal from this survey was to see if the changes made to the game improved
         the overall experience since the prior round of user testing. It was also used to see if our goals
-        for the project overall were met and if we succeeded in making an accessible game. In total we had
+        for the project were met and if we succeeded in making an accessible game. In total we had
         25 people fill out the survey anonymously. You can see the survey and the questions
         <a href ="https://docs.google.com/forms/d/e/1FAIpQLScvjYglOWr_jZosmt-Oof9ERdL6lX0o8MRZCV9-a7ZarACIZA/viewform" target="_blank" class = "underline">here</a>.
       </p>
@@ -460,7 +473,7 @@
         <li>Results shown on gameboard and current player's turn shown on bottom</li>
         <li>After each cell is selected a synthetic voice reads what player selected the cell and which cell was selected</li>
         <ul>
-          <li>Ex. Synthetic voice would read "X selected call three"</li>
+          <li>Ex. Synthetic voice would read "X selected cell three"</li>
         </ul>
       </ul>
     </div>
@@ -496,8 +509,8 @@
         <div class = "smallspace"></div>
         <h5>Instructions</h5>
         <ul>
-          <li>Instructions explain each way user can interact with the site to play the game along with how to use the voice recognition</li>
-          <li>Gives one example on how to use the game instead of being very repetitive like in the 2nd iteration of the game</li>
+          <li>Instructions explain each way a user can interact with the site to play the game along with how to use the voice recognition</li>
+          <li>Gives one example on how to use the game instead of being very repetitive, like in the 2nd iteration of the game</li>
         </ul>
       </div>
     </div>
@@ -528,14 +541,14 @@
         <div class = "left">
           <h5>Future Considerations</h5>
           <p>I think the project could use one more design iteration, it is nearly
-            there but there are a few things I still would like to work on before I think the project can be considered fully finished.</p>
+            there but there are a few things I still would like to work on before the project can be considered fully finished.</p>
             <ul>
               <li><h5>Read the board: </h5>A couple of people wrote that this feature in
-                particular was frustrating, this was added in between the first user
+                particular was frustrating. This was added in between the first user
                 testing and the final user testing. Had we tested this feature a bit
                 more I think my group and I would have been able to come up with
                 a more successful solution.</li>
-              <li><h5>Change the Color Scheme: </h5>The is a split second between
+              <li><h5>Change the Color Scheme: </h5>There is a split second between
                 switching color schemes that the web application displays the page
                 without any css and there is a quick flash of white. It's a bit
                 jarring and takes away from the feature itself.</li>
@@ -544,8 +557,8 @@
           <h5>What I learned:</h5>
           <p>This project was my first introduction into universal design and accessible
             technology. I particularly found it very interesting seeing how different colors affect
-            people with visual impairments. I also foudn it interesting to combine new technology,
-            such as voice control, with games people are already familar with in order to make them more accessible. </p>
+            people with visual impairments. I also found it interesting to combine new technology,
+            such as voice recognition, with games people are already familar with in order to make them more accessible. </p>
         </div>
       </div>
     </div>
